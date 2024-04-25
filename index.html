@@ -291,7 +291,7 @@
         console.log("Event received: " + JSON.stringify(e.data));
         if (e.origin !== "https://playgroundus-v5.dev.amelia.com") return;
 
-        if (e.data.action === "checkout" && e.data.additionalData) {
+        if (e.data.action === "checkout") {
           window.open("https://www.google.com");
         }
       }
